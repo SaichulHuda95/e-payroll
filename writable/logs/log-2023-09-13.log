@@ -1,0 +1,711 @@
+ERROR - 2023-09-13 12:36:11 --> mysqli_sql_exception: Table 'e-payroll.tbl_produk' doesn't exist in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT nama_pro...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT nama_pro...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT nama_pro...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Views/layout.php(40): CodeIgniter\Database\BaseConnection->query('SELECT nama_pro...')
+#4 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(220): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(236): CodeIgniter\View\View->render('layout', Array, true)
+#7 /Applications/MAMP/htdocs/e-payroll/system/Common.php(1217): CodeIgniter\View\View->render('profil/index', Array, true)
+#8 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Profil.php(26): view('profil/index', Array)
+#9 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Profil->index()
+#10 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+#11 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-09-13 12:36:11 --> Table 'e-payroll.tbl_produk' doesn't exist
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT nama_pro...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT nama_pro...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT nama_pro...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Views/layout.php(40): CodeIgniter\Database\BaseConnection->query('SELECT nama_pro...')
+#4 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(220): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(236): CodeIgniter\View\View->render('layout', Array, true)
+#7 /Applications/MAMP/htdocs/e-payroll/system/Common.php(1217): CodeIgniter\View\View->render('profil/index', Array, true)
+#8 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Profil.php(26): view('profil/index', Array)
+#9 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Profil->index()
+#10 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+#11 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-09-13 12:50:18 --> You must set the database table to be used with your query.
+#0 /Applications/MAMP/htdocs/e-payroll/system/Model.php(615): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /Applications/MAMP/htdocs/e-payroll/system/Model.php(834): CodeIgniter\Model->builder()
+#2 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(26): CodeIgniter\Model->__call('getNoFaktur', Array)
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->index()
+#4 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-13 13:31:59 --> Argument 1 passed to CodeIgniter\Database\BaseConnection::query() must be of the type string, null given, called in /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php on line 33
+#0 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(33): CodeIgniter\Database\BaseConnection->query(NULL)
+#1 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(26): App\Models\getModel->getKaryawan()
+#2 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->index()
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#4 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2023-09-13 13:32:36 --> mysqli_sql_exception: Unknown column 'd.nama_status' in 'field list' in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.id_kar...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.id_kar...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.id_kar...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(33): CodeIgniter\Database\BaseConnection->query('SELECT a.id_kar...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(26): App\Models\getModel->getKaryawan()
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->index()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-13 13:32:36 --> Unknown column 'd.nama_status' in 'field list'
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.id_kar...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.id_kar...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.id_kar...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(33): CodeIgniter\Database\BaseConnection->query('SELECT a.id_kar...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(26): App\Models\getModel->getKaryawan()
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->index()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-09-13 13:32:37 --> mysqli_sql_exception: Unknown column 'd.nama_status' in 'field list' in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.id_kar...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.id_kar...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.id_kar...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(33): CodeIgniter\Database\BaseConnection->query('SELECT a.id_kar...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(26): App\Models\getModel->getKaryawan()
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->index()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-13 13:32:37 --> Unknown column 'd.nama_status' in 'field list'
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.id_kar...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.id_kar...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.id_kar...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(33): CodeIgniter\Database\BaseConnection->query('SELECT a.id_kar...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(26): App\Models\getModel->getKaryawan()
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->index()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-09-13 14:40:12 --> mysqli_sql_exception: Column 'jenis_kelamin' cannot be null in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `tb...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /Applications/MAMP/htdocs/e-payroll/app/Models/insertModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(77): App\Models\insertModel->insertKaryawan(Array)
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->simpan_karyawan()
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#8 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-13 14:40:12 --> Column 'jenis_kelamin' cannot be null
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `tb...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /Applications/MAMP/htdocs/e-payroll/app/Models/insertModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(77): App\Models\insertModel->insertKaryawan(Array)
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->simpan_karyawan()
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#8 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-09-13 14:41:01 --> mysqli_sql_exception: Column 'jenis_kelamin' cannot be null in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `tb...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /Applications/MAMP/htdocs/e-payroll/app/Models/insertModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(77): App\Models\insertModel->insertKaryawan(Array)
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->simpan_karyawan()
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#8 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-13 14:41:01 --> Column 'jenis_kelamin' cannot be null
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `tb...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /Applications/MAMP/htdocs/e-payroll/app/Models/insertModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(77): App\Models\insertModel->insertKaryawan(Array)
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->simpan_karyawan()
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#8 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-09-13 15:32:52 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '== '1'' at line 6 in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.id_kar...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.id_kar...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.id_kar...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(47): CodeIgniter\Database\BaseConnection->query('SELECT a.id_kar...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(91): App\Models\getModel->getKaryawanDetil('1')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->detail_karyawan('1')
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-13 15:32:52 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '== '1'' at line 6
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.id_kar...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.id_kar...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.id_kar...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(47): CodeIgniter\Database\BaseConnection->query('SELECT a.id_kar...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(91): App\Models\getModel->getKaryawanDetil('1')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->detail_karyawan('1')
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-13 17:03:53 --> Invalid file: karyawan/karyawan_detil.php
+#0 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('karyawan/karyaw...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Common.php(1217): CodeIgniter\View\View->render('karyawan/karyaw...', Array, true)
+#2 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(98): view('karyawan/karyaw...', Array)
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->detail_karyawan('1')
+#4 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-13 17:03:58 --> Invalid file: karyawan/index.php
+#0 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('karyawan/index....')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Common.php(1217): CodeIgniter\View\View->render('karyawan/index', Array, true)
+#2 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(32): view('karyawan/index', Array)
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->index()
+#4 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-13 17:03:59 --> Invalid file: karyawan/karyawan_detil.php
+#0 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('karyawan/karyaw...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Common.php(1217): CodeIgniter\View\View->render('karyawan/karyaw...', Array, true)
+#2 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(98): view('karyawan/karyaw...', Array)
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->detail_karyawan('1')
+#4 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-13 17:04:13 --> Invalid file: karyawan/karyawan_detil.php
+#0 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('karyawan/karyaw...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Common.php(1217): CodeIgniter\View\View->render('karyawan/karyaw...', Array, true)
+#2 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(98): view('karyawan/karyaw...', Array)
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->detail_karyawan('1')
+#4 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-13 17:04:18 --> Invalid file: karyawan/karyawan_detil.php
+#0 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('karyawan/karyaw...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Common.php(1217): CodeIgniter\View\View->render('karyawan/karyaw...', Array, true)
+#2 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(98): view('karyawan/karyaw...', Array)
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->detail_karyawan('1')
+#4 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2023-09-13 17:04:20 --> mysqli_sql_exception: Column 'nama' cannot be null in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `tb...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /Applications/MAMP/htdocs/e-payroll/app/Models/insertModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(83): App\Models\insertModel->insertKaryawan(Array)
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->simpan_karyawan()
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#8 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-13 17:04:20 --> Column 'nama' cannot be null
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `tb...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /Applications/MAMP/htdocs/e-payroll/app/Models/insertModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(83): App\Models\insertModel->insertKaryawan(Array)
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->simpan_karyawan()
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#8 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-13 17:04:21 --> Invalid file: karyawan/index.php
+#0 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('karyawan/index....')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Common.php(1217): CodeIgniter\View\View->render('karyawan/index', Array, true)
+#2 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(32): view('karyawan/index', Array)
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->index()
+#4 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-13 17:04:51 --> Invalid file: karyawan/index.php
+#0 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('karyawan/index....')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Common.php(1217): CodeIgniter\View\View->render('karyawan/index', Array, true)
+#2 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(32): view('karyawan/index', Array)
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->index()
+#4 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-13 17:05:03 --> Undefined property: stdClass::$npwpd
+#0 /Applications/MAMP/htdocs/e-payroll/app/Views/profil/index.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/Applications/M...', 18, Array)
+#1 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(220): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/e-payroll/system/Common.php(1217): CodeIgniter\View\View->render('profil/index', Array, true)
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Profil.php(26): view('profil/index', Array)
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Profil->index()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-13 17:05:32 --> Invalid file: karyawan/index.php
+#0 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('karyawan/index....')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Common.php(1217): CodeIgniter\View\View->render('karyawan/index', Array, true)
+#2 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(32): view('karyawan/index', Array)
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->index()
+#4 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-13 17:06:13 --> Invalid file: karyawan/index.php
+#0 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('karyawan/index....')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Common.php(1217): CodeIgniter\View\View->render('karyawan/index', Array, true)
+#2 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(32): view('karyawan/index', Array)
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->index()
+#4 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-13 17:06:24 --> Invalid file: karyawan/index.php
+#0 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('karyawan/index....')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Common.php(1217): CodeIgniter\View\View->render('karyawan/index', Array, true)
+#2 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(32): view('karyawan/index', Array)
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->index()
+#4 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-13 17:06:50 --> Invalid file: karyawan/index.php
+#0 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('karyawan/index....')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Common.php(1217): CodeIgniter\View\View->render('karyawan/index', Array, true)
+#2 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(32): view('karyawan/index', Array)
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->index()
+#4 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-13 17:06:52 --> Invalid file: karyawan/index.php
+#0 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('karyawan/index....')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Common.php(1217): CodeIgniter\View\View->render('karyawan/index', Array, true)
+#2 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(32): view('karyawan/index', Array)
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->index()
+#4 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-13 17:06:53 --> Invalid file: karyawan/index.php
+#0 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('karyawan/index....')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Common.php(1217): CodeIgniter\View\View->render('karyawan/index', Array, true)
+#2 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(32): view('karyawan/index', Array)
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->index()
+#4 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-13 17:06:53 --> Invalid file: karyawan/index.php
+#0 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('karyawan/index....')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Common.php(1217): CodeIgniter\View\View->render('karyawan/index', Array, true)
+#2 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(32): view('karyawan/index', Array)
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->index()
+#4 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-13 17:07:00 --> Invalid file: karyawan/index.php
+#0 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('karyawan/index....')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Common.php(1217): CodeIgniter\View\View->render('karyawan/index', Array, true)
+#2 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(32): view('karyawan/index', Array)
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->index()
+#4 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-13 17:07:45 --> Invalid file: karyawan/index.php
+#0 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('karyawan/index....')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Common.php(1217): CodeIgniter\View\View->render('karyawan/index', Array, true)
+#2 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(32): view('karyawan/index', Array)
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->index()
+#4 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-13 17:08:08 --> Invalid file: karyawan/index.php
+#0 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('karyawan/index....')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Common.php(1217): CodeIgniter\View\View->render('karyawan/index', Array, true)
+#2 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(32): view('karyawan/index', Array)
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->index()
+#4 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-13 17:08:51 --> Invalid file: karyawan/index.php
+#0 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('karyawan/index....')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Common.php(1217): CodeIgniter\View\View->render('karyawan/index', Array, true)
+#2 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(32): view('karyawan/index', Array)
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->index()
+#4 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-13 17:09:09 --> Undefined property: stdClass::$npwpd
+#0 /Applications/MAMP/htdocs/e-payroll/app/Views/profil/index.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/Applications/M...', 18, Array)
+#1 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(220): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/e-payroll/system/Common.php(1217): CodeIgniter\View\View->render('profil/index', Array, true)
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Profil.php(26): view('profil/index', Array)
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Profil->index()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-13 17:09:23 --> Invalid file: karyawan/index.php
+#0 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('karyawan/index....')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Common.php(1217): CodeIgniter\View\View->render('karyawan/index', Array, true)
+#2 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(32): view('karyawan/index', Array)
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->index()
+#4 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-13 18:55:02 --> Invalid argument supplied for foreach()
+#0 /Applications/MAMP/htdocs/e-payroll/app/Views/lemburan/modaltambahlemburan.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', '/Applications/M...', 17, Array)
+#1 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(220): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/e-payroll/system/Common.php(1217): CodeIgniter\View\View->render('lemburan/modalt...', Array, true)
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Lemburan.php(42): view('lemburan/modalt...')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Lemburan->tambah_lemburan()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lemburan))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-09-13 21:55:23 --> mysqli_sql_exception: Unknown column 'a.jabatan' in 'on clause' in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.id_kar...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.id_kar...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.id_kar...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(33): CodeIgniter\Database\BaseConnection->query('SELECT a.id_kar...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(26): App\Models\getModel->getKaryawan()
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->index()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-13 21:55:23 --> Unknown column 'a.jabatan' in 'on clause'
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.id_kar...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.id_kar...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.id_kar...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(33): CodeIgniter\Database\BaseConnection->query('SELECT a.id_kar...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(26): App\Models\getModel->getKaryawan()
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->index()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-09-13 22:05:12 --> mysqli_sql_exception: Unknown column 'd.status_karyawan' in 'field list' in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.id_kar...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.id_kar...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.id_kar...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(33): CodeIgniter\Database\BaseConnection->query('SELECT a.id_kar...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Lemburan.php(37): App\Models\getModel->getKaryawan()
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Lemburan->tambah_lemburan()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lemburan))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-13 22:05:12 --> Unknown column 'd.status_karyawan' in 'field list'
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.id_kar...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.id_kar...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.id_kar...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(33): CodeIgniter\Database\BaseConnection->query('SELECT a.id_kar...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Lemburan.php(37): App\Models\getModel->getKaryawan()
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Lemburan->tambah_lemburan()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lemburan))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-09-13 22:05:15 --> mysqli_sql_exception: Unknown column 'd.status_karyawan' in 'field list' in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.id_kar...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.id_kar...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.id_kar...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(33): CodeIgniter\Database\BaseConnection->query('SELECT a.id_kar...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Lemburan.php(37): App\Models\getModel->getKaryawan()
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Lemburan->tambah_lemburan()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lemburan))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-13 22:05:15 --> Unknown column 'd.status_karyawan' in 'field list'
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.id_kar...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.id_kar...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.id_kar...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(33): CodeIgniter\Database\BaseConnection->query('SELECT a.id_kar...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Lemburan.php(37): App\Models\getModel->getKaryawan()
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Lemburan->tambah_lemburan()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lemburan))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-09-13 22:05:35 --> mysqli_sql_exception: Unknown column 'd.status_karyawan' in 'field list' in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.*,b.ja...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.*,b.ja...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.*,b.ja...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(47): CodeIgniter\Database\BaseConnection->query('SELECT a.*,b.ja...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Lemburan.php(51): App\Models\getModel->getKaryawanDetil('1')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Lemburan->get_karyawan()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lemburan))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-13 22:05:35 --> Unknown column 'd.status_karyawan' in 'field list'
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.*,b.ja...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.*,b.ja...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.*,b.ja...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(47): CodeIgniter\Database\BaseConnection->query('SELECT a.*,b.ja...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Lemburan.php(51): App\Models\getModel->getKaryawanDetil('1')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Lemburan->get_karyawan()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lemburan))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-09-13 22:06:14 --> mysqli_sql_exception: Unknown column 'd.status_karyawan' in 'field list' in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.*,b.ja...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.*,b.ja...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.*,b.ja...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(47): CodeIgniter\Database\BaseConnection->query('SELECT a.*,b.ja...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Lemburan.php(51): App\Models\getModel->getKaryawanDetil('1')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Lemburan->get_karyawan()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lemburan))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-13 22:06:14 --> Unknown column 'd.status_karyawan' in 'field list'
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.*,b.ja...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.*,b.ja...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.*,b.ja...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(47): CodeIgniter\Database\BaseConnection->query('SELECT a.*,b.ja...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Lemburan.php(51): App\Models\getModel->getKaryawanDetil('1')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Lemburan->get_karyawan()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lemburan))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-09-13 22:06:23 --> mysqli_sql_exception: Unknown column 'd.status_karyawan' in 'field list' in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.*,b.ja...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.*,b.ja...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.*,b.ja...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(47): CodeIgniter\Database\BaseConnection->query('SELECT a.*,b.ja...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(92): App\Models\getModel->getKaryawanDetil('1')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->detail_karyawan('1')
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-13 22:06:23 --> Unknown column 'd.status_karyawan' in 'field list'
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.*,b.ja...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.*,b.ja...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.*,b.ja...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(47): CodeIgniter\Database\BaseConnection->query('SELECT a.*,b.ja...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(92): App\Models\getModel->getKaryawanDetil('1')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->detail_karyawan('1')
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-09-13 22:07:02 --> mysqli_sql_exception: Unknown column 'd.status_karyawan' in 'field list' in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.*,b.ja...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.*,b.ja...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.*,b.ja...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(47): CodeIgniter\Database\BaseConnection->query('SELECT a.*,b.ja...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(92): App\Models\getModel->getKaryawanDetil('1')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->detail_karyawan('1')
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-13 22:07:02 --> Unknown column 'd.status_karyawan' in 'field list'
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.*,b.ja...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.*,b.ja...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.*,b.ja...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(47): CodeIgniter\Database\BaseConnection->query('SELECT a.*,b.ja...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(92): App\Models\getModel->getKaryawanDetil('1')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->detail_karyawan('1')
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-09-13 22:07:27 --> mysqli_sql_exception: Unknown column 'd.status_karyawan' in 'field list' in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.*,b.ja...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.*,b.ja...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.*,b.ja...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(47): CodeIgniter\Database\BaseConnection->query('SELECT a.*,b.ja...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(92): App\Models\getModel->getKaryawanDetil('1')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->detail_karyawan('1')
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-13 22:07:27 --> Unknown column 'd.status_karyawan' in 'field list'
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.*,b.ja...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.*,b.ja...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.*,b.ja...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(47): CodeIgniter\Database\BaseConnection->query('SELECT a.*,b.ja...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Karyawan.php(92): App\Models\getModel->getKaryawanDetil('1')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Karyawan->detail_karyawan('1')
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-09-13 23:09:47 --> mysqli_sql_exception: Column 'created_by' cannot be null in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `tb...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /Applications/MAMP/htdocs/e-payroll/app/Models/insertModel.php(19): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Lemburan.php(93): App\Models\insertModel->insertLemburan(Array)
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Lemburan->simpan_lemburan()
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lemburan))
+#8 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-13 23:09:47 --> Column 'created_by' cannot be null
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `tb...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /Applications/MAMP/htdocs/e-payroll/app/Models/insertModel.php(19): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Lemburan.php(93): App\Models\insertModel->insertLemburan(Array)
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Lemburan->simpan_lemburan()
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lemburan))
+#8 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-13 23:13:40 --> date_format() expects parameter 1 to be DateTimeInterface, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'date_format() e...', '/Applications/M...', 35, Array)
+#1 /Applications/MAMP/htdocs/e-payroll/app/Views/lemburan/index.php(35): date_format('2023-09-13 17:1...', 'H:i')
+#2 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(220): include('/Applications/M...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /Applications/MAMP/htdocs/e-payroll/system/Common.php(1217): CodeIgniter\View\View->render('lemburan/index', Array, true)
+#5 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Lemburan.php(32): view('lemburan/index', Array)
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Lemburan->index()
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lemburan))
+#8 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-13 23:13:49 --> date_format() expects parameter 1 to be DateTimeInterface, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'date_format() e...', '/Applications/M...', 35, Array)
+#1 /Applications/MAMP/htdocs/e-payroll/app/Views/lemburan/index.php(35): date_format('2023-09-13 17:1...', 'H:i')
+#2 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(220): include('/Applications/M...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /Applications/MAMP/htdocs/e-payroll/system/Common.php(1217): CodeIgniter\View\View->render('lemburan/index', Array, true)
+#5 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Lemburan.php(32): view('lemburan/index', Array)
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Lemburan->index()
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lemburan))
+#8 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-13 23:13:49 --> date_format() expects parameter 1 to be DateTimeInterface, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'date_format() e...', '/Applications/M...', 35, Array)
+#1 /Applications/MAMP/htdocs/e-payroll/app/Views/lemburan/index.php(35): date_format('2023-09-13 17:1...', 'H:i')
+#2 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(220): include('/Applications/M...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /Applications/MAMP/htdocs/e-payroll/system/Common.php(1217): CodeIgniter\View\View->render('lemburan/index', Array, true)
+#5 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Lemburan.php(32): view('lemburan/index', Array)
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Lemburan->index()
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lemburan))
+#8 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-13 23:15:03 --> date_format() expects parameter 1 to be DateTimeInterface, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'date_format() e...', '/Applications/M...', 31, Array)
+#1 /Applications/MAMP/htdocs/e-payroll/app/Views/lemburan/index.php(31): date_format('2023-09-13 17:1...', 'H:i')
+#2 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(220): include('/Applications/M...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /Applications/MAMP/htdocs/e-payroll/system/Common.php(1217): CodeIgniter\View\View->render('lemburan/index', Array, true)
+#5 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Lemburan.php(32): view('lemburan/index', Array)
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Lemburan->index()
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lemburan))
+#8 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-13 23:15:04 --> date_format() expects parameter 1 to be DateTimeInterface, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'date_format() e...', '/Applications/M...', 31, Array)
+#1 /Applications/MAMP/htdocs/e-payroll/app/Views/lemburan/index.php(31): date_format('2023-09-13 17:1...', 'H:i')
+#2 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(220): include('/Applications/M...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /Applications/MAMP/htdocs/e-payroll/system/Common.php(1217): CodeIgniter\View\View->render('lemburan/index', Array, true)
+#5 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Lemburan.php(32): view('lemburan/index', Array)
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Lemburan->index()
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lemburan))
+#8 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-09-13 23:56:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 4 in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.*,b.st...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.*,b.st...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.*,b.st...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(95): CodeIgniter\Database\BaseConnection->query('SELECT a.*,b.st...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Lemburan.php(104): App\Models\getModel->getLemburanDetil(NULL)
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Lemburan->edit_lemburan()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lemburan))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-13 23:56:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 4
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.*,b.st...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.*,b.st...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.*,b.st...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(95): CodeIgniter\Database\BaseConnection->query('SELECT a.*,b.st...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Lemburan.php(104): App\Models\getModel->getLemburanDetil(NULL)
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Lemburan->edit_lemburan()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lemburan))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-09-13 23:57:22 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 4 in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.*,b.st...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.*,b.st...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.*,b.st...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(95): CodeIgniter\Database\BaseConnection->query('SELECT a.*,b.st...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Lemburan.php(104): App\Models\getModel->getLemburanDetil(NULL)
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Lemburan->edit_lemburan()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lemburan))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-13 23:57:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 4
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.*,b.st...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.*,b.st...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.*,b.st...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(95): CodeIgniter\Database\BaseConnection->query('SELECT a.*,b.st...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Lemburan.php(104): App\Models\getModel->getLemburanDetil(NULL)
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Lemburan->edit_lemburan()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lemburan))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}

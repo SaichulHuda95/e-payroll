@@ -1,0 +1,633 @@
+ERROR - 2023-09-14 00:50:39 --> mysqli_sql_exception: Unknown column 'created_date' in 'field list' in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `tb...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /Applications/MAMP/htdocs/e-payroll/app/Models/insertModel.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Nwnp.php(64): App\Models\insertModel->insertNwnp(Array)
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\NWNP->simpan_nwnp()
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NWNP))
+#8 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-14 00:50:39 --> Unknown column 'created_date' in 'field list'
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `tb...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /Applications/MAMP/htdocs/e-payroll/app/Models/insertModel.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Nwnp.php(64): App\Models\insertModel->insertNwnp(Array)
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\NWNP->simpan_nwnp()
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NWNP))
+#8 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-09-14 00:58:49 --> mysqli_sql_exception: Unknown column 'created_date' in 'field list' in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `tb...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /Applications/MAMP/htdocs/e-payroll/app/Models/insertModel.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Nwnp.php(65): App\Models\insertModel->insertNwnp(Array)
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\NWNP->simpan_nwnp()
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NWNP))
+#8 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-14 00:58:49 --> Unknown column 'created_date' in 'field list'
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `tb...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /Applications/MAMP/htdocs/e-payroll/app/Models/insertModel.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Nwnp.php(65): App\Models\insertModel->insertNwnp(Array)
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\NWNP->simpan_nwnp()
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NWNP))
+#8 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-09-14 01:01:33 --> mysqli_sql_exception: Unknown column 'created_date' in 'field list' in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `tb...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /Applications/MAMP/htdocs/e-payroll/app/Models/insertModel.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Nwnp.php(65): App\Models\insertModel->insertNwnp(Array)
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\NWNP->simpan_nwnp()
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NWNP))
+#8 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-14 01:01:33 --> Unknown column 'created_date' in 'field list'
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `tb...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /Applications/MAMP/htdocs/e-payroll/app/Models/insertModel.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Nwnp.php(65): App\Models\insertModel->insertNwnp(Array)
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\NWNP->simpan_nwnp()
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NWNP))
+#8 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-09-14 01:07:10 --> mysqli_sql_exception: Unknown column 'created_date' in 'field list' in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `tb...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /Applications/MAMP/htdocs/e-payroll/app/Models/insertModel.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Nwnp.php(65): App\Models\insertModel->insertNwnp(Array)
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\NWNP->simpan_nwnp()
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NWNP))
+#8 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-14 01:07:10 --> Unknown column 'created_date' in 'field list'
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `tb...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /Applications/MAMP/htdocs/e-payroll/app/Models/insertModel.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Nwnp.php(65): App\Models\insertModel->insertNwnp(Array)
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\NWNP->simpan_nwnp()
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NWNP))
+#8 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-09-14 01:07:13 --> mysqli_sql_exception: Unknown column 'created_date' in 'field list' in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `tb...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /Applications/MAMP/htdocs/e-payroll/app/Models/insertModel.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Nwnp.php(65): App\Models\insertModel->insertNwnp(Array)
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\NWNP->simpan_nwnp()
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NWNP))
+#8 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-14 01:07:13 --> Unknown column 'created_date' in 'field list'
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `tb...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /Applications/MAMP/htdocs/e-payroll/app/Models/insertModel.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Nwnp.php(65): App\Models\insertModel->insertNwnp(Array)
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\NWNP->simpan_nwnp()
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NWNP))
+#8 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-09-14 01:08:08 --> mysqli_sql_exception: Unknown column 'created_date' in 'field list' in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `tb...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /Applications/MAMP/htdocs/e-payroll/app/Models/insertModel.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Nwnp.php(65): App\Models\insertModel->insertNwnp(Array)
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\NWNP->simpan_nwnp()
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NWNP))
+#8 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-14 01:08:08 --> Unknown column 'created_date' in 'field list'
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `tb...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /Applications/MAMP/htdocs/e-payroll/app/Models/insertModel.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Nwnp.php(65): App\Models\insertModel->insertNwnp(Array)
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\NWNP->simpan_nwnp()
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NWNP))
+#8 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-09-14 01:08:20 --> mysqli_sql_exception: Unknown column 'created_date' in 'field list' in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `tb...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /Applications/MAMP/htdocs/e-payroll/app/Models/insertModel.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Nwnp.php(65): App\Models\insertModel->insertNwnp(Array)
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\NWNP->simpan_nwnp()
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NWNP))
+#8 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-14 01:08:20 --> Unknown column 'created_date' in 'field list'
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `tb...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /Applications/MAMP/htdocs/e-payroll/app/Models/insertModel.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Nwnp.php(65): App\Models\insertModel->insertNwnp(Array)
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\NWNP->simpan_nwnp()
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NWNP))
+#8 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-09-14 01:09:51 --> mysqli_sql_exception: Unknown column 'created_date' in 'field list' in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `tb...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /Applications/MAMP/htdocs/e-payroll/app/Models/insertModel.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Nwnp.php(65): App\Models\insertModel->insertNwnp(Array)
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\NWNP->simpan_nwnp()
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NWNP))
+#8 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-14 01:09:51 --> Unknown column 'created_date' in 'field list'
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `tb...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /Applications/MAMP/htdocs/e-payroll/app/Models/insertModel.php(26): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Nwnp.php(65): App\Models\insertModel->insertNwnp(Array)
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\NWNP->simpan_nwnp()
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NWNP))
+#8 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-09-14 01:22:48 --> mysqli_sql_exception: Unknown table 'a' in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.*,b.st...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.*,b.st...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.*,b.st...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(113): CodeIgniter\Database\BaseConnection->query('SELECT a.*,b.st...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Nwnp.php(74): App\Models\getModel->getNwnpDetil('1')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\NWNP->edit_nwnp()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NWNP))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-14 01:22:48 --> Unknown table 'a'
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.*,b.st...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.*,b.st...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.*,b.st...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(113): CodeIgniter\Database\BaseConnection->query('SELECT a.*,b.st...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Nwnp.php(74): App\Models\getModel->getNwnpDetil('1')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\NWNP->edit_nwnp()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NWNP))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-09-14 01:23:53 --> mysqli_sql_exception: Unknown table 'a' in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.*,b.st...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.*,b.st...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.*,b.st...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(113): CodeIgniter\Database\BaseConnection->query('SELECT a.*,b.st...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Nwnp.php(74): App\Models\getModel->getNwnpDetil('1')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\NWNP->edit_nwnp()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NWNP))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-14 01:23:53 --> Unknown table 'a'
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.*,b.st...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.*,b.st...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.*,b.st...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(113): CodeIgniter\Database\BaseConnection->query('SELECT a.*,b.st...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Nwnp.php(74): App\Models\getModel->getNwnpDetil('1')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\NWNP->edit_nwnp()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NWNP))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-09-14 01:24:20 --> mysqli_sql_exception: Unknown table 'a' in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.*,b.st...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.*,b.st...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.*,b.st...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(113): CodeIgniter\Database\BaseConnection->query('SELECT a.*,b.st...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Nwnp.php(74): App\Models\getModel->getNwnpDetil('1')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\NWNP->edit_nwnp()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NWNP))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-14 01:24:20 --> Unknown table 'a'
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.*,b.st...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.*,b.st...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.*,b.st...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(113): CodeIgniter\Database\BaseConnection->query('SELECT a.*,b.st...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Nwnp.php(74): App\Models\getModel->getNwnpDetil('1')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\NWNP->edit_nwnp()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NWNP))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-09-14 01:29:15 --> mysqli_sql_exception: Unknown column 'id_nwnp' in 'where clause' in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('UPDATE `tbl_lem...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_lem...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_lem...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseBuilder.php(2468): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_lem...', Array, false)
+#4 /Applications/MAMP/htdocs/e-payroll/app/Models/updateModel.php(29): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Nwnp.php(105): App\Models\updateModel->updateNwnp('1', Array)
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\NWNP->update_nwnp('1')
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NWNP))
+#8 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-14 01:29:15 --> Unknown column 'id_nwnp' in 'where clause'
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('UPDATE `tbl_lem...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_lem...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_lem...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseBuilder.php(2468): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_lem...', Array, false)
+#4 /Applications/MAMP/htdocs/e-payroll/app/Models/updateModel.php(29): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Nwnp.php(105): App\Models\updateModel->updateNwnp('1', Array)
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\NWNP->update_nwnp('1')
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NWNP))
+#8 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-09-14 15:52:45 --> mysqli_sql_exception: Unknown column 'tanggal_absen' in 'field list' in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `tb...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /Applications/MAMP/htdocs/e-payroll/app/Models/insertModel.php(33): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Cuti.php(65): App\Models\insertModel->insertCuti(Array)
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Cuti->simpan_cuti()
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cuti))
+#8 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-14 15:52:45 --> Unknown column 'tanggal_absen' in 'field list'
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `tb...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /Applications/MAMP/htdocs/e-payroll/app/Models/insertModel.php(33): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Cuti.php(65): App\Models\insertModel->insertCuti(Array)
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Cuti->simpan_cuti()
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cuti))
+#8 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-09-14 15:54:04 --> mysqli_sql_exception: Column 'tanggal_cuti' cannot be null in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `tb...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /Applications/MAMP/htdocs/e-payroll/app/Models/insertModel.php(33): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Cuti.php(65): App\Models\insertModel->insertCuti(Array)
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Cuti->simpan_cuti()
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cuti))
+#8 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-14 15:54:04 --> Column 'tanggal_cuti' cannot be null
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `tb...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 /Applications/MAMP/htdocs/e-payroll/app/Models/insertModel.php(33): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Cuti.php(65): App\Models\insertModel->insertCuti(Array)
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Cuti->simpan_cuti()
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cuti))
+#8 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-09-14 15:55:38 --> mysqli_sql_exception: Unknown column 'id_cuti' in 'where clause' in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT * FROM t...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(131): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Cuti.php(74): App\Models\getModel->getCutiDetil('1')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Cuti->edit_cuti()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cuti))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-14 15:55:38 --> Unknown column 'id_cuti' in 'where clause'
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT * FROM t...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(131): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Cuti.php(74): App\Models\getModel->getCutiDetil('1')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Cuti->edit_cuti()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cuti))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-09-14 15:55:42 --> mysqli_sql_exception: Unknown column 'id_cuti' in 'where clause' in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT * FROM t...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(131): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Cuti.php(74): App\Models\getModel->getCutiDetil('1')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Cuti->edit_cuti()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cuti))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-14 15:55:42 --> Unknown column 'id_cuti' in 'where clause'
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT * FROM t...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(131): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Cuti.php(74): App\Models\getModel->getCutiDetil('1')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Cuti->edit_cuti()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cuti))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-09-14 17:34:53 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.a, b.nama FROM tbl_cuti AS a
+        LEFT JOIN tbl_karyawan AS b on b.id_karyaw' at line 1 in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *.a, b.n...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *.a, b.n...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *.a, b.n...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(141): CodeIgniter\Database\BaseConnection->query('SELECT *.a, b.n...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php(25): App\Models\getModel->getGaji()
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Gaji->index()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gaji))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-14 17:34:53 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.a, b.nama FROM tbl_cuti AS a
+        LEFT JOIN tbl_karyawan AS b on b.id_karyaw' at line 1
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *.a, b.n...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *.a, b.n...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *.a, b.n...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(141): CodeIgniter\Database\BaseConnection->query('SELECT *.a, b.n...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php(25): App\Models\getModel->getGaji()
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Gaji->index()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gaji))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-09-14 17:35:37 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.a, b.nama FROM tbl_gaji AS a
+        LEFT JOIN tbl_karyawan AS b on b.id_karyaw' at line 1 in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *.a, b.n...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *.a, b.n...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *.a, b.n...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(141): CodeIgniter\Database\BaseConnection->query('SELECT *.a, b.n...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php(25): App\Models\getModel->getGaji()
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Gaji->index()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gaji))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-14 17:35:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.a, b.nama FROM tbl_gaji AS a
+        LEFT JOIN tbl_karyawan AS b on b.id_karyaw' at line 1
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *.a, b.n...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *.a, b.n...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *.a, b.n...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(141): CodeIgniter\Database\BaseConnection->query('SELECT *.a, b.n...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php(25): App\Models\getModel->getGaji()
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Gaji->index()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gaji))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-14 19:47:33 --> You must set the database table to be used with your query.
+#0 /Applications/MAMP/htdocs/e-payroll/system/Model.php(615): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /Applications/MAMP/htdocs/e-payroll/system/Model.php(834): CodeIgniter\Model->builder()
+#2 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php(88): CodeIgniter\Model->__call('getTotalNwnp', Array)
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Gaji->hitung_gaji()
+#4 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gaji))
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2023-09-14 19:50:27 --> mysqli_sql_exception: Unknown column 'jam_masuk' in 'where clause' in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT COUNT(id...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(id...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(id...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(177): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(id...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php(88): App\Models\getModel->getTotalNwnp('1', '2023-09-01', '2023-09-30')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Gaji->hitung_gaji()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gaji))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-14 19:50:27 --> Unknown column 'jam_masuk' in 'where clause'
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT COUNT(id...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(id...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(id...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(177): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(id...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php(88): App\Models\getModel->getTotalNwnp('1', '2023-09-01', '2023-09-30')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Gaji->hitung_gaji()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gaji))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-09-14 20:37:36 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 6 in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.*,b.ja...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.*,b.ja...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.*,b.ja...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(47): CodeIgniter\Database\BaseConnection->query('SELECT a.*,b.ja...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php(50): App\Models\getModel->getKaryawanDetil('')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Gaji->get_karyawan()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gaji))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-14 20:37:36 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 6
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.*,b.ja...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.*,b.ja...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.*,b.ja...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(47): CodeIgniter\Database\BaseConnection->query('SELECT a.*,b.ja...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php(50): App\Models\getModel->getKaryawanDetil('')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Gaji->get_karyawan()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gaji))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-09-14 20:41:32 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 6 in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.*,b.ja...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.*,b.ja...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.*,b.ja...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(47): CodeIgniter\Database\BaseConnection->query('SELECT a.*,b.ja...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php(50): App\Models\getModel->getKaryawanDetil('')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Gaji->get_karyawan()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gaji))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-14 20:41:32 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 6
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.*,b.ja...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.*,b.ja...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.*,b.ja...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(47): CodeIgniter\Database\BaseConnection->query('SELECT a.*,b.ja...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php(50): App\Models\getModel->getKaryawanDetil('')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Gaji->get_karyawan()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gaji))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-09-14 20:41:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 6 in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.*,b.ja...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.*,b.ja...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.*,b.ja...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(47): CodeIgniter\Database\BaseConnection->query('SELECT a.*,b.ja...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php(50): App\Models\getModel->getKaryawanDetil('')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Gaji->get_karyawan()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gaji))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-14 20:41:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 6
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.*,b.ja...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.*,b.ja...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.*,b.ja...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(47): CodeIgniter\Database\BaseConnection->query('SELECT a.*,b.ja...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php(50): App\Models\getModel->getKaryawanDetil('')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Gaji->get_karyawan()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gaji))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-09-14 20:42:40 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 6 in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.*,b.ja...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.*,b.ja...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.*,b.ja...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(47): CodeIgniter\Database\BaseConnection->query('SELECT a.*,b.ja...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php(50): App\Models\getModel->getKaryawanDetil('')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Gaji->get_karyawan()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gaji))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-14 20:42:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 6
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.*,b.ja...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.*,b.ja...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.*,b.ja...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(47): CodeIgniter\Database\BaseConnection->query('SELECT a.*,b.ja...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php(50): App\Models\getModel->getKaryawanDetil('')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Gaji->get_karyawan()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gaji))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-09-14 20:43:46 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 6 in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.*,b.ja...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.*,b.ja...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.*,b.ja...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(47): CodeIgniter\Database\BaseConnection->query('SELECT a.*,b.ja...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php(50): App\Models\getModel->getKaryawanDetil('')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Gaji->get_karyawan()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gaji))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-14 20:43:46 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 6
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.*,b.ja...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.*,b.ja...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.*,b.ja...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(47): CodeIgniter\Database\BaseConnection->query('SELECT a.*,b.ja...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php(50): App\Models\getModel->getKaryawanDetil('')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Gaji->get_karyawan()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gaji))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-09-14 20:49:25 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 6 in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.*,b.ja...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.*,b.ja...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.*,b.ja...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(47): CodeIgniter\Database\BaseConnection->query('SELECT a.*,b.ja...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php(50): App\Models\getModel->getKaryawanDetil('')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Gaji->get_karyawan()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gaji))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-14 20:49:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 6
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.*,b.ja...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.*,b.ja...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.*,b.ja...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(47): CodeIgniter\Database\BaseConnection->query('SELECT a.*,b.ja...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php(50): App\Models\getModel->getKaryawanDetil('')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Gaji->get_karyawan()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gaji))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-09-14 20:53:52 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 6 in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.*,b.ja...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.*,b.ja...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.*,b.ja...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(47): CodeIgniter\Database\BaseConnection->query('SELECT a.*,b.ja...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php(50): App\Models\getModel->getKaryawanDetil('')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Gaji->get_karyawan()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gaji))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-14 20:53:52 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 6
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.*,b.ja...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.*,b.ja...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.*,b.ja...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(47): CodeIgniter\Database\BaseConnection->query('SELECT a.*,b.ja...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php(50): App\Models\getModel->getKaryawanDetil('')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Gaji->get_karyawan()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gaji))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}

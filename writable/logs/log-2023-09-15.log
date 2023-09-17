@@ -1,0 +1,107 @@
+ERROR - 2023-09-15 09:40:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 6 in /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.*,b.ja...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.*,b.ja...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.*,b.ja...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(47): CodeIgniter\Database\BaseConnection->query('SELECT a.*,b.ja...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php(50): App\Models\getModel->getKaryawanDetil('')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Gaji->get_karyawan()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gaji))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-15 09:40:44 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 6
+#0 /Applications/MAMP/htdocs/e-payroll/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT a.*,b.ja...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(685): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.*,b.ja...')
+#2 /Applications/MAMP/htdocs/e-payroll/system/Database/BaseConnection.php(621): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.*,b.ja...')
+#3 /Applications/MAMP/htdocs/e-payroll/app/Models/getModel.php(47): CodeIgniter\Database\BaseConnection->query('SELECT a.*,b.ja...')
+#4 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php(50): App\Models\getModel->getKaryawanDetil('')
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Gaji->get_karyawan()
+#6 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gaji))
+#7 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-15 11:57:04 --> Too few arguments to function App\Controllers\Gaji::cetak_gaji(), 0 passed in /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php on line 936 and exactly 1 expected
+#0 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Gaji->cetak_gaji()
+#1 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gaji))
+#2 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-09-15 13:23:20 --> syntax error, unexpected '$this' (T_VARIABLE)
+#0 /Applications/MAMP/htdocs/e-payroll/system/Router/Router.php(170): CodeIgniter\Router\Router->autoRoute('verifikasi')
+#1 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(816): CodeIgniter\Router\Router->handle('verifikasi')
+#2 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-09-15 13:23:23 --> syntax error, unexpected '$this' (T_VARIABLE)
+#0 /Applications/MAMP/htdocs/e-payroll/system/Router/Router.php(170): CodeIgniter\Router\Router->autoRoute('verifikasi')
+#1 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(816): CodeIgniter\Router\Router->handle('verifikasi')
+#2 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-09-15 13:24:03 --> Too few arguments to function App\Controllers\Verifikasi::pending_gaji(), 0 passed in /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php on line 936 and exactly 1 expected
+#0 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Verifikasi->pending_gaji()
+#1 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Verifikasi))
+#2 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-09-15 13:25:19 --> syntax error, unexpected '$data' (T_VARIABLE)
+#0 /Applications/MAMP/htdocs/e-payroll/system/Router/Router.php(170): CodeIgniter\Router\Router->autoRoute('verifikasi')
+#1 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(816): CodeIgniter\Router\Router->handle('verifikasi')
+#2 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-09-15 13:25:29 --> Too few arguments to function App\Controllers\Verifikasi::pending_gaji(), 0 passed in /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php on line 936 and exactly 1 expected
+#0 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Verifikasi->pending_gaji()
+#1 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Verifikasi))
+#2 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-09-15 13:26:17 --> Too few arguments to function App\Controllers\Verifikasi::pending_gaji(), 0 passed in /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php on line 936 and exactly 1 expected
+#0 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Verifikasi->pending_gaji()
+#1 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Verifikasi))
+#2 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-09-15 13:26:54 --> Too few arguments to function App\Controllers\Verifikasi::pending_gaji(), 0 passed in /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php on line 936 and exactly 1 expected
+#0 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Verifikasi->pending_gaji()
+#1 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Verifikasi))
+#2 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-09-15 13:27:29 --> Too few arguments to function App\Controllers\Verifikasi::pending_gaji(), 0 passed in /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php on line 936 and exactly 1 expected
+#0 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Verifikasi->pending_gaji()
+#1 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Verifikasi))
+#2 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-09-15 17:44:42 --> Invalid file: setting/modaltambahkategori.php
+#0 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('setting/modalta...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Common.php(1217): CodeIgniter\View\View->render('setting/modalta...', Array, true)
+#2 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Pengaturan.php(44): view('setting/modalta...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Pengaturan->tambah_jabatan()
+#4 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-15 17:45:44 --> You must set the database table to be used with your query.
+#0 /Applications/MAMP/htdocs/e-payroll/system/Model.php(615): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /Applications/MAMP/htdocs/e-payroll/system/Model.php(834): CodeIgniter\Model->builder()
+#2 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Pengaturan.php(65): CodeIgniter\Model->__call('getJabatanDetil', Array)
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Pengaturan->edit_jabatan()
+#4 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-15 17:54:24 --> Invalid file: setting/modaleditsstatus.php
+#0 /Applications/MAMP/htdocs/e-payroll/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('setting/modaled...')
+#1 /Applications/MAMP/htdocs/e-payroll/system/Common.php(1217): CodeIgniter\View\View->render('setting/modaled...', Array, true)
+#2 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Pengaturan.php(131): view('setting/modaled...', Array)
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Pengaturan->edit_status()
+#4 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengaturan))
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}

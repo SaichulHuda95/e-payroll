@@ -1,0 +1,87 @@
+CRITICAL - 2023-09-17 17:49:48 --> Argument 2 passed to view() must be of the type array, null given, called in /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php on line 202
+#0 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php(202): view('gaji/cetak_gaji', NULL)
+#1 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Gaji->cetak_gaji('1')
+#2 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gaji))
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-09-17 17:49:56 --> Argument 2 passed to view() must be of the type array, null given, called in /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php on line 202
+#0 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php(202): view('gaji/cetak_gaji', NULL)
+#1 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Gaji->cetak_gaji('1')
+#2 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gaji))
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-09-17 17:52:25 --> Argument 2 passed to view() must be of the type array, null given, called in /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php on line 202
+#0 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php(202): view('gaji/cetak_gaji', NULL)
+#1 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Gaji->cetak_gaji('1')
+#2 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gaji))
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-09-17 17:52:31 --> Argument 2 passed to view() must be of the type array, null given, called in /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php on line 202
+#0 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php(202): view('gaji/cetak_gaji', NULL)
+#1 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Gaji->cetak_gaji('1')
+#2 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gaji))
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-09-17 17:52:41 --> Argument 2 passed to view() must be of the type array, null given, called in /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php on line 202
+#0 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php(202): view('gaji/cetak_gaji', NULL)
+#1 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Gaji->cetak_gaji('1')
+#2 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gaji))
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-09-17 17:53:57 --> syntax error, unexpected '$pdf' (T_VARIABLE)
+#0 /Applications/MAMP/htdocs/e-payroll/system/Router/Router.php(170): CodeIgniter\Router\Router->autoRoute('gaji')
+#1 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(816): CodeIgniter\Router\Router->handle('gaji')
+#2 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-09-17 18:04:06 --> array_push() expects parameter 1 to be array, null given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_push() ex...', '/Applications/M...', 18356, Array)
+#1 /Applications/MAMP/htdocs/e-payroll/app/helpers/tcpdf/tcpdf.php(18356): array_push(NULL, Array)
+#2 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php(207): TCPDF->writeHTML('<!doctype html>...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Gaji->cetak_gaji('1')
+#4 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gaji))
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-17 18:17:04 --> array_push() expects parameter 1 to be array, null given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_push() ex...', '/Applications/M...', 18356, Array)
+#1 /Applications/MAMP/htdocs/e-payroll/app/helpers/tcpdf/tcpdf.php(18356): array_push(NULL, Array)
+#2 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php(207): TCPDF->writeHTML('<!doctype html>...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Gaji->cetak_gaji('1')
+#4 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gaji))
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-17 18:17:15 --> array_push() expects parameter 1 to be array, null given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_push() ex...', '/Applications/M...', 18356, Array)
+#1 /Applications/MAMP/htdocs/e-payroll/app/helpers/tcpdf/tcpdf.php(18356): array_push(NULL, Array)
+#2 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php(207): TCPDF->writeHTML('<!doctype html>...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Gaji->cetak_gaji('1')
+#4 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gaji))
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-17 18:17:38 --> array_push() expects parameter 1 to be array, null given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_push() ex...', '/Applications/M...', 18356, Array)
+#1 /Applications/MAMP/htdocs/e-payroll/app/helpers/tcpdf/tcpdf.php(18356): array_push(NULL, Array)
+#2 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php(207): TCPDF->writeHTML('<!doctype html>...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Gaji->cetak_gaji('1')
+#4 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gaji))
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-09-17 18:18:11 --> array_push() expects parameter 1 to be array, null given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_push() ex...', '/Applications/M...', 18356, Array)
+#1 /Applications/MAMP/htdocs/e-payroll/app/helpers/tcpdf/tcpdf.php(18356): array_push(NULL, Array)
+#2 /Applications/MAMP/htdocs/e-payroll/app/Controllers/Gaji.php(207): TCPDF->writeHTML('<!doctype html>...')
+#3 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(936): App\Controllers\Gaji->cetak_gaji('1')
+#4 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gaji))
+#5 /Applications/MAMP/htdocs/e-payroll/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/e-payroll/index.php(43): CodeIgniter\CodeIgniter->run()
+#7 {main}
